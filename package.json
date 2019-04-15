@@ -1,7 +1,7 @@
 {
   "name": "stac-validator-cli",
   "author": "Sparkgeo <hi@sparkgeo.com>",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A node-based CLI implementation of stac-validator",
   "keywords": [
     "stac-spec",
