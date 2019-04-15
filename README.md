@@ -1,6 +1,6 @@
 # NodeJS Stac Validator
 
-Validates a spatial temporal catalog asset based on the specs laid out by [Radiant Earth](https://github.com/radiantearth/stac-spec/tree/v0.6.0).
+Validates a spatial temporal catalog asset based on the specs laid out by [Radiant Earth](https://github.com/radiantearth/stac-spec/tree/v0.6.0). Uses https://github.com/sparkgeo/node-stac-validator
 
 ## Versions
 
@@ -74,6 +74,10 @@ The errors object is subject to change until the first stable release, v0.7.0.
     ]
   }
 ```
+
+## Roadmap
+
+- [ ] Use modules from `node-stacvalidator`
 
 ## Sample Catalog
 

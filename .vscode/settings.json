@@ -1,0 +1,10 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeForeground": "#111",
+    "titleBar.inactiveForeground": "#ddd",
+    "titleBar.activeBackground": "#80E8E2",
+    "titleBar.inactiveBackground": "#99A5FF"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
+}
