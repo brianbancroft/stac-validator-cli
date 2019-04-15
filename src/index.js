@@ -1,6 +1,6 @@
 var fs = require('fs')
 const chalk = require('chalk')
-const { validateFromObject, validateFromUrl } = require('./modules')
+const { validateFromObject, validateFromUrl } = require('stac-validator')
 const {
   // unknownFileLocation,
   malformedUrl,
