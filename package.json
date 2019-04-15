@@ -1,0 +1,19 @@
+{
+  "name": "stac-validator-cli",
+  "version": "0.0.1",
+  "description": "A node-base CLI for the STAC Validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianbancroft/stac-validator-cli.git"
+  },
+  "author": "Brian Bancroft <hello@brianbancroft.ca>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianbancroft/stac-validator-cli/issues"
+  },
+  "homepage": "https://github.com/brianbancroft/stac-validator-cli#readme"
+}
