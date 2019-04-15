@@ -30,9 +30,9 @@ const errorMessages = responses => {
   log('=======================================================')
 }
 
-const logMessage = response =>
-  response.success ? successMessage : errorMessages(response.responses)
-
+const logMessage = response => {
+  return response.success ? successMessage() : errorMessages(response.responses)
+}
 const args = require('optimist')
   .usage('Validates a STAC asset.\nUsage: $0')
   .demand('l')
