@@ -1,8 +1,19 @@
 {
   "name": "stac-validator-cli",
+  "author": "Sparkgeo <hi@sparkgeo.com>",
   "version": "0.0.1",
-  "description": "A node-base CLI for the STAC Validator",
-  "main": "index.js",
+  "description": "A node-based CLI implementation of stac-validator",
+  "keywords": [
+    "stac-spec",
+    "stac",
+    "remote sensing",
+    "earth observation",
+    "geospatial"
+  ],
+  "main": "dist/index.js",
+  "bin": {
+    "stac-validator": "./dist/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +21,49 @@
     "type": "git",
     "url": "git+https://github.com/brianbancroft/stac-validator-cli.git"
   },
-  "author": "Brian Bancroft <hello@brianbancroft.ca>",
-  "license": "ISC",
+  "license": "Apache License 2.0",
   "bugs": {
     "url": "https://github.com/brianbancroft/stac-validator-cli/issues"
   },
-  "homepage": "https://github.com/brianbancroft/stac-validator-cli#readme"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "homepage": "https://github.com/brianbancroft/stac-validator-cli#readme",
+  "dependencies": {
+    "ajv": "^6.6.2",
+    "axios": "^0.18.0",
+    "chalk": "^2.4.2",
+    "lodash": "^4.17.11",
+    "luxon": "^1.9.0",
+    "optimist": "^0.6.1",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/plugin-transform-regenerator": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "babel-polyfill": "^6.26.0",
+    "eslint": "^5.10.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "faker": "^4.1.0",
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "jest": "^24.5.0",
+    "prettier": "^1.15.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
 }
